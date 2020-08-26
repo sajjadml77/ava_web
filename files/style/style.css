@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -213,7 +214,19 @@ button {
   height: 100px;
 }
 
-.poem {
+.loc-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-left: 38px;
+  font-size: 25px;
+}
+
+.poem-container {
   background-color: #f3f3f3;
   height: 600px;
   width: 1150px;
@@ -235,7 +248,7 @@ button {
 .cont {
   padding: 0px;
   position: relative;
-  top: 490px;
+  top: 20px;
   left: 50px;
   height: 40px;
   width: 150px;
@@ -438,12 +451,137 @@ button {
 }
 
 .w-container {
-  background-color: red;
   width: 90%;
   height: 200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
   float: right;
+}
+
+.first {
+  float: right;
+  padding: 10px;
+  margin-top: 20px;
+  width: 65px;
+  height: 45px;
+  padding-bottom: 25px;
+  border: #cccccc solid 0.5px;
+}
+
+.first .f-word {
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.second {
+  direction: rtl;
+  margin-right: 150px;
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.eng {
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.tool-tip {
+  text-align: center;
+  visibility: hidden;
+}
+
+.eng:hover .tool-tip {
+  visibility: visible;
+}
+
+.tool-tip::after {
+  content: "تلفظ";
+  display: block;
+  position: relative;
+  background: #797979;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #797979;
+  width: 70px;
+  height: 15px;
+  padding: 5px;
+  top: 60px;
+  right: 20px;
+  color: #eeeeef;
+  border-color: #797979 #797979 #797979 #797979;
+}
+
+.poem {
+  width: 90%;
+  height: 470px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  grid-gap: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.left {
+  height: 470px;
+}
+
+.right {
+  height: 470px;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  position: absolute;
+  display: block;
+  font-size: 20px;
+  padding: 55px;
+  width: 1100px;
+  margin-left: -40px;
+  line-height: 30px;
+}
+
+.title {
+  position: relative;
+  top: -35px;
+  font-size: 30px;
+}
+
+.tease {
+  position: relative;
+  top: -10px;
+}
+
+.prof {
+  position: relative;
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  float: right;
+  right: 20px;
+  top: 20px;
+}
+
+.prof .preview {
+  direction: rtl;
+  position: absolute;
+  top: 50px;
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
